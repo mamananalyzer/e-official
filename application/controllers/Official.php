@@ -43,7 +43,7 @@ class Official extends CI_Controller {
         $total = $permata + $bca + $cash;
         $possibility = str_replace('.', '', $this->input->post('possibility'));
         $target = str_replace('.', '', $this->input->post('target'));
-        $space = $possibility - $target;
+        $space = (int)$possibility - (int)$target;
         $data = Array(
             'month' => $month,
             'target' => $target,
