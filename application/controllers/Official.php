@@ -40,7 +40,7 @@ class Official extends CI_Controller {
         $bca = str_replace('.', '', $this->input->post('bca'));
         $cash = str_replace('.', '', $this->input->post('cash'));
         $out = str_replace('.', '', $this->input->post('out'));
-        $total = $permata + $bca + $cash;
+        $total = (int)$permata + (int)$bca + (int)$cash;
         $possibility = str_replace('.', '', $this->input->post('possibility'));
         $target = str_replace('.', '', $this->input->post('target'));
         $space = (int)$possibility - (int)$target;
