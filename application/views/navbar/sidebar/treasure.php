@@ -300,6 +300,13 @@
                                                 placeholder="Cash" onkeyup="splitInDots(this)">
                                         </div>
                                         <div class="col-md-4">
+                                            <label for="out">Out</label>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="out" class="form-control" name="out"
+                                                placeholder="Out" onkeyup="splitInDots(this)">
+                                        </div>
+                                        <div class="col-md-4">
                                             <label for="possibility">Possibility</label>
                                         </div>
                                         <div class="col-md-8 form-group">
@@ -310,7 +317,7 @@
                                             <label for="target">Target</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="target" class="form-control" name="target" readonly value="<?= number_format($treasure['target'][0]['target']) ?>">
+                                            <input type="text" id="target" class="form-control" name="target" readonly value="<?= ($treasure['target'][0]['target']) ?>">
                                         </div>
                                         <div class="col-sm-12 d-flex justify-content-end">
                                             <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
