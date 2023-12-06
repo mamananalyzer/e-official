@@ -30,6 +30,10 @@
   <link rel="stylesheet" href="<?= base_url('./assets/mazer/compiled/css/app.css'); ?>">
   <link rel="stylesheet" href="<?= base_url('./assets/mazer/compiled/css/app-dark.css'); ?>">
 
+  <!-- sweetalert2 -->
+  <link rel="stylesheet" href="<?= base_url('./assets/mazer/extensions/sweetalert2/sweetalert2.min.css'); ?>">
+
+
 </head>
 
 <body>

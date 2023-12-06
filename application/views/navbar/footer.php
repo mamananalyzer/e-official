@@ -11,16 +11,16 @@
 </footer>
         </div>
     </div>
-<script src="assets/mazer/static/js/components/dark.js"></script>
-<script src="assets/mazer/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-<script src="assets/mazer/compiled/js/app.js"></script>
-    
+        
     
 <!-- Need: Apexcharts -->
 <script src="assets/mazer/extensions/apexcharts/apexcharts.min.js"></script>
 <script src="assets/mazer/static/js/pages/dashboard.js"></script>
 <script src="<?= base_url('./assets/js/titik.js'); ?>"></script>
 
+<!-- sweetalert2 -->
+<script src="<?= base_url('./assets/mazer/extensions/sweetalert2/sweetalert2.min.js'); ?>"></script>>
+<script src="<?= base_url('./assets/mazer/static/js/pages/sweetalert2.js'); ?>"></script>>
 
 <!-- jquery datatable -->
 <script src="<?= base_url('./assets/mazer/static/js/components/dark.js');?>"></script>
@@ -31,6 +31,7 @@
 <script src="<?= base_url('./assets/mazer/extensions/datatables.net/js/jquery.dataTables.min.js'); ?>"></script>
 <script src="<?= base_url('./assets/mazer/extensions/datatables.net-bs5/js/dataTables.bootstrap5.min.js'); ?>"></script>
 <script src="<?= base_url('./assets/mazer/static/js/pages/datatables.js'); ?>"></script>
+
 
 
 

@@ -20,4 +20,13 @@ Class Treasure Extends CI_Model {
         $this->db->insert('treasure', $data);
     }
 
+    public function delete_record($id) {
+        // Assuming 'your_table' is the name of your database table
+        $this->db->where('id_treasure', $id);
+        $this->db->delete('treasure');
+
+        // Check if a record was deleted
+        return $this->db->affected_rows() > 0;
+    }
+
 }

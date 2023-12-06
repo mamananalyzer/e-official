@@ -365,6 +365,7 @@
                                         <th>Out</th>
                                         <th>Possibility</th>
                                         <th>Space Created</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -379,10 +380,26 @@
                                             <td>Rp. <?= number_format($t['out'], 0, ',', '.'); ?></td>
                                             <td>Rp. <?= number_format($t['possibility'], 0, ',', '.'); ?></td>
                                             <td>Rp. <?= number_format($t['space'], 0, ',', '.'); ?></td>
-                                        </tr>
+                                                <form action="<?= base_url('official/delete_treasure/' . $t['id_treasure']) ?>" method="post">
+                                                    <td><button type="submit" class="btn btn-warning me-1 mb-1">Delete</button></td>
+                                                </form>
+                                            </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                             </table>
+                                <!-- Add this script to show toast messages -->
+                                <script type="text/javascript">
+                                    // Check for success message
+                                    <?php if ($this->session->flashdata('success_message')): ?>
+                                        swal('Success', '<?php echo $this->session->flashdata('success_message'); ?>', 'success');
+                                    <?php endif; ?>
+
+                                    // Check for error message
+                                    <?php if ($this->session->flashdata('error_message')): ?>
+                                        swal('Error', '<?php echo $this->session->flashdata('error_message'); ?>', 'error');
+                                    <?php endif; ?>
+                                </script>
+                            <button id="toast-success" class="btn btn-outline-primary btn-lg btn-block">Success Example</button>
                         </div>
                     </div>
                 </div>

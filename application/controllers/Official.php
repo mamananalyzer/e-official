@@ -31,6 +31,7 @@ class Official extends CI_Controller {
         $this->load->view('navbar/sidebar');
         $this->load->view('navbar/sidebar/treasure', $treasure);
         $this->load->view('navbar/footer');
+
     }
 
     public function add_treasure() {
@@ -57,6 +58,21 @@ class Official extends CI_Controller {
         );
         var_dump($data);
         $this->treasure->InsertDataTreasure($data);
+        return redirect('official/treasure');
+    }
+
+    public function delete_treasure($id) {
+        // Load the model
+        $this->load->model('Treasure');
+        
+        // Call the delete_record method in the model
+        if ($this->Treasure->delete_record($id)) {
+            // Record deleted successfully
+            $this->session->set_flashdata('success_message', 'Record deleted successfully.');
+        } else {
+            // Unable to delete the record
+            $this->session->set_flashdata('error_message', 'Unable to delete the record.');
+        }
         return redirect('official/treasure');
     }
 
