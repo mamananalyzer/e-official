@@ -26,6 +26,15 @@ class Persona extends CI_Controller {
         // die();
     }
 
+    public function show() {
+
+        $this->load->view('navbar/header');
+        // $this->load->view('navbar/sidebar');
+        $this->load->view('navbar/sidebar/persona_show');
+        $this->load->view('navbar/footer');
+        
+    }
+
     public function register() {
 
         $this->load->library('ciqrcode');

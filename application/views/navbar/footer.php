@@ -1,14 +1,10 @@
-<footer>
-    <div class="footer clearfix mb-0 text-muted">
-        <div class="float-start">
-            <p>2023 &copy; LyZer</p>
-        </div>
-        <!-- <div class="float-end">
-            <p>Crafted with <span class="text-danger"><i class="bi bi-heart-fill icon-mid"></i></span>
-                by <a href="https://saugi.me">Saugi</a></p>
-        </div> -->
-    </div>
-</footer>
+        <footer>
+            <div class="footer clearfix mb-0 text-muted">
+                <div class="float-start">
+                    <p>2023 &copy; LyZer</p>
+                </div>
+            </div>
+        </footer>
         </div>
     </div>
         
@@ -19,8 +15,8 @@
 <script src="<?= base_url('./assets/js/titik.js'); ?>"></script>
 
 <!-- sweetalert2 -->
-<script src="<?= base_url('./assets/mazer/extensions/sweetalert2/sweetalert2.min.js'); ?>"></script>>
-<script src="<?= base_url('./assets/mazer/static/js/pages/sweetalert2.js'); ?>"></script>>
+<script src="<?= base_url('./assets/mazer/extensions/sweetalert2/sweetalert2.min.js'); ?>"></script>
+<script src="<?= base_url('./assets/mazer/static/js/pages/sweetalert2.js'); ?>"></script>
 
 <!-- jquery datatable -->
 <script src="<?= base_url('./assets/mazer/static/js/components/dark.js');?>"></script>
