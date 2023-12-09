@@ -1,7 +1,7 @@
 <?Php
 Defined('BASEPATH') OR Exit('No Direct Script Access Allowed');
 
-Class Treasure Extends CI_Model {
+Class Treasure_model Extends CI_Model {
 
     public function get_treasure($treasure)
 	{

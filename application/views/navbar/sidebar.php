@@ -63,7 +63,7 @@
             </li> -->
             <li
                 class="sidebar-item">
-                <a href="<?= base_url('official/treasure')?>" class='sidebar-link' onclick="activateSidebarItem(this)">
+                <a href="<?= base_url('treasure')?>" class='sidebar-link' onclick="activateSidebarItem(this)">
                     <i class="bi bi-basket-fill"></i>
                     <span>Treasure</span>
                 </a>
@@ -76,17 +76,17 @@
                 </a>
             </li> -->
             <li
-                class="sidebar-item">
-                <a href="<?= base_url('official/testing')?>" class='sidebar-link'>
-                    <i class="bi bi-puzzle"></i>
-                    <span>Testing</span>
-                </a>
+            class="sidebar-item">
+            <a href="<?= base_url('persona')?>" class='sidebar-link'>
+                <i class="bi bi-person-badge"></i>
+                <span>Persona</span>
+            </a>
             </li>
             <li
                 class="sidebar-item">
-                <a href="<?= base_url('official/persona')?>" class='sidebar-link'>
-                    <i class="bi bi-person-badge"></i>
-                    <span>Persona</span>
+                <a href="<?= base_url('testing')?>" class='sidebar-link'>
+                    <i class="bi bi-puzzle"></i>
+                    <span>Testing</span>
                 </a>
             </li>
             <br>

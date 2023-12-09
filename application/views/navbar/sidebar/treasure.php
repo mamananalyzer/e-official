@@ -266,7 +266,7 @@
 </div> -->
 
 <section id="basic-horizontal-layouts">
-    <Form Action="<?= base_url('official/add_treasure') ?>" Method="Post">
+    <Form Action="<?= base_url('treasure/add_treasure') ?>" Method="Post">
         <div class="row match-height">
             <div class="col-md-6 col-12">
                 <div class="card">
@@ -317,7 +317,7 @@
                                             <label for="target">Target</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="target" class="form-control" name="target" readonly value="<?= ($treasure['target'][0]['target']) ?>">
+                                            <input type="text" id="target" class="form-control" name="target" readonly value="<?= ($treasure_data['target'][0]['target']) ?>">
                                         </div>
                                         <div class="col-sm-12 d-flex justify-content-end">
                                             <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
@@ -369,7 +369,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($treasure['data'] as $t):?>                                
+                                    <?php foreach ($treasure_data['data'] as $t):?>                                
                                         <tr>
                                             <td><?= $t['month']; ?></td>
                                             <td>Rp. <?= number_format($t['target'], 0, ',', '.'); ?></td>
@@ -380,26 +380,25 @@
                                             <td>Rp. <?= number_format($t['out'], 0, ',', '.'); ?></td>
                                             <td>Rp. <?= number_format($t['possibility'], 0, ',', '.'); ?></td>
                                             <td>Rp. <?= number_format($t['space'], 0, ',', '.'); ?></td>
-                                                <form action="<?= base_url('official/delete_treasure/' . $t['id_treasure']) ?>" method="post">
+                                                <form action="<?= base_url('treasure/delete_treasure/' . $t['id_treasure']) ?>" method="post">
                                                     <td><button type="submit" class="btn btn-warning me-1 mb-1">Delete</button></td>
                                                 </form>
                                             </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                             </table>
-                                <!-- Add this script to show toast messages -->
-                                <script type="text/javascript">
-                                    // Check for success message
-                                    <?php if ($this->session->flashdata('success_message')): ?>
-                                        swal('Success', '<?php echo $this->session->flashdata('success_message'); ?>', 'success');
-                                    <?php endif; ?>
+                            <!-- Add this script to show toast messages -->
+                            <script type="text/javascript">
+                                // Check for success message
+                                <?php if ($this->session->flashdata('success_message')): ?>
+                                    swal('Success', '<?php echo $this->session->flashdata('success_message'); ?>', 'success');
+                                <?php endif; ?>
 
-                                    // Check for error message
-                                    <?php if ($this->session->flashdata('error_message')): ?>
-                                        swal('Error', '<?php echo $this->session->flashdata('error_message'); ?>', 'error');
-                                    <?php endif; ?>
-                                </script>
-                            <button id="toast-success" class="btn btn-outline-primary btn-lg btn-block">Success Example</button>
+                                // Check for error message
+                                <?php if ($this->session->flashdata('error_message')): ?>
+                                    swal('Error', '<?php echo $this->session->flashdata('error_message'); ?>', 'error');
+                                <?php endif; ?>
+                            </script>
                         </div>
                     </div>
                 </div>
