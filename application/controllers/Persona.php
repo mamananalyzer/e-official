@@ -26,13 +26,19 @@ class Persona extends CI_Controller {
         // die();
     }
 
-    public function show() {
+    public function show($id_user) {
 
-        $this->load->view('navbar/header');
-        // $this->load->view('navbar/sidebar');
-        $this->load->view('navbar/sidebar/persona_show');
-        $this->load->view('navbar/footer');
-        
+        $user = $this->persona_model->getUserById($id_user);
+
+        if ($user) {
+            // Do something with the user details, like passing them to a view
+            $this->load->view('navbar/header');
+            $this->load->view('navbar/sidebar/persona_show', $user);
+            $this->load->view('navbar/footer');
+        } else {
+            // Handle the case where the user is not found
+            echo "User not found!";
+        }
     }
 
     public function register() {

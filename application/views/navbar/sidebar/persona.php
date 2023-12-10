@@ -209,7 +209,7 @@
                                                 <img class="bd-placeholder-img" width="50" src="<?= base_url('./assets/qrcodes/') . $p['qr']; ?>">
                                             </td>
                                                     <td>
-                                                        <a href="<?= base_url('persona/show'); ?>" class="btn icon btn-info"><i class="bi bi-info-circle"></i></a>
+                                                        <a href="<?= base_url('persona/show/'). $p['id_user']; ?>" class="btn icon btn-info"><i class="bi bi-info-circle"></i></a>
                                                         <!-- <button type="submit" class="btn btn-warning" onclick="return confirm('Are you sure you want to delete this item?');">Delete</button> -->
                                                         <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#danger">Delete</button>
                                                     </td>
