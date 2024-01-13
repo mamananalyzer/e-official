@@ -19,4 +19,8 @@ class Testing extends CI_Controller {
         $this->load->view('navbar/sidebar/testing');
         $this->load->view('navbar/footer');
     }
+
+    public function sneat() {
+        $this->load->view('sneat/app-calendar');
+    }
 }

@@ -1,6 +1,6 @@
 <style>
     body {
-        zoom: 90%;
+        zoom: 88%;
     }
 </style>
 
