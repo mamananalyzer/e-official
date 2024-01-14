@@ -20,7 +20,21 @@ class Testing extends CI_Controller {
         $this->load->view('navbar/footer');
     }
 
-    public function sneat() {
+    public function calendar() {
+        $this->load->view('architecture/above');
+        $this->load->view('architecture/middle');
         $this->load->view('sneat/app-calendar');
+        $this->load->view('architecture/zone');
+    }
+
+    public function user() {
+        $this->load->view('architecture/above');
+        $this->load->view('architecture/middle');
+        $this->load->view('sneat/app-user-list');
+        $this->load->view('architecture/zone');
+    }
+    
+    public function crm() {
+        $this->load->view('sneat/dashboards-crm');
     }
 }
