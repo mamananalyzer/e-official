@@ -39,10 +39,10 @@
     <script src="<?= base_url('assets/sneat/vendor/libs/flatpickr/flatpickr.js'); ?>"></script>
     <script src="<?= base_url('assets/sneat/vendor/libs/moment/moment.js'); ?>"></script>
     <!-- user -->
-    <script src="<?= base_url('assets/vendor/libs/moment/moment.js'); ?>"></script>
-    <script src="<?= base_url('assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js'); ?>"></script>
-    <script src="<?= base_url('assets/vendor/libs/cleavejs/cleave.js'); ?>"></script>
-    <script src="<?= base_url('assets/vendor/libs/cleavejs/cleave-phone.js'); ?>"></script>
+    <script src="<?= base_url('assets/sneat/vendor/libs/moment/moment.js'); ?>"></script>
+    <script src="<?= base_url('assets/sneat/vendor/libs/datatables-bs5/datatables-bootstrap5.js'); ?>"></script>
+    <script src="<?= base_url('assets/sneat/vendor/libs/cleavejs/cleave.js'); ?>"></script>
+    <script src="<?= base_url('assets/sneat/vendor/libs/cleavejs/cleave-phone.js'); ?>"></script>
 
   <!-- Main JS -->
   <script src="<?= base_url('assets/sneat/js/main.js'); ?>"></script>
@@ -53,7 +53,7 @@
   <script src="<?= base_url('assets/sneat/js/app-calendar.js'); ?>"></script>
 
   <!-- User JS -->
-  <script src="<?= base_url('assets/js/app-user-list.js'); ?>"></script>
+  <script src="<?= base_url('assets/sneat/js/app-user-list.js'); ?>"></script>
   
 </body>
 

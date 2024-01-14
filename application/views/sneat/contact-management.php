@@ -297,18 +297,19 @@
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body mx-0 flex-grow-0">
-    <form class="add-new-user pt-0" id="addNewUserForm" onsubmit="return false">
+
+    <form method="post" action="<?= base_url('CRM/register'); ?>" enctype="multipart/form-data" class="add-new-user pt-0" id="addNewUserForm">
     <div class="mb-3">
     <label class="form-label" for="add-user-fullname">Full Name</label>
-    <input type="text" class="form-control" id="add-user-fullname" placeholder="John Doe" name="userFullname" aria-label="John Doe" />
+    <input type="text" class="form-control" id="add-user-fullname" placeholder="John Doe" name="name" aria-label="John Doe" />
     </div>
     <div class="mb-3">
     <label class="form-label" for="add-user-email">Email</label>
-    <input type="text" id="add-user-email" class="form-control" placeholder="john.doe@example.com" aria-label="john.doe@example.com" name="userEmail" />
+    <input type="text" id="add-user-email" class="form-control" placeholder="john.doe@example.com" aria-label="john.doe@example.com" name="email" />
     </div>
     <div class="mb-3">
     <label class="form-label" for="add-user-area">Area</label>
-        <select id="country" class="select2 form-select">
+        <select id="country" class="select2 form-select" name="area">
             <option value="">Select</option>
             <option value="Jakarta">Jakarta</option>
             <option value="Cikarang">Cikarang</option>
@@ -319,28 +320,27 @@
             <option value="Karawang">Karawang</option>
             <option value="Tangerang Selatan">Tangerang Selatan</option>
             <option value="Bekasi">Bekasi</option>
-        </select>    </div>
-    <div class="mb-3">
-    <label class="form-label" for="add-user-contact">Contact</label>
-    <input type="text" id="add-user-contact" class="form-control phone-mask" placeholder="+1 (609) 988-44-11" aria-label="john.doe@example.com" name="userContact" />
+        </select>    
     </div>
     <div class="mb-3">
-    <label class="form-label" for="add-user-contact">Contact</label>
-    <input type="text" id="add-user-contact" class="form-control phone-mask" placeholder="+1 (609) 988-44-11" aria-label="john.doe@example.com" name="userContact" />
+    <label class="form-label" for="add-user-contact">Phone Number</label>
+    <input type="text" id="add-user-contact" class="form-control phone-mask" placeholder="+1 (609) 988-44-11" aria-label="john.doe@example.com" name="phone_number" />
+    </div>
+    <div class="mb-3">
+    <label class="form-label" for="add-user-contact">Mobile Phone</label>
+    <input type="text" id="add-user-contact" class="form-control phone-mask" placeholder="+1 (609) 988-44-11" aria-label="john.doe@example.com" name="mobilephone" />
     </div>
     <div class="mb-3">
     <label class="form-label" for="add-user-company">Company</label>
-    <input type="text" id="add-user-company" class="form-control" placeholder="Web Developer" aria-label="jdoe1" name="companyName" />
+    <input type="text" id="add-user-company" class="form-control" placeholder="PT. Sesna" aria-label="jdoe1" name="company" />
     </div>
     <div class="mb-3">
-    <label class="form-label" for="user-role">User Role</label>
-    <select id="user-role" class="form-select">
-    <option value="subscriber">Subscriber</option>
-    <option value="editor">Editor</option>
-    <option value="maintainer">Maintainer</option>
-    <option value="author">Author</option>
-    <option value="admin">Admin</option>
-    </select>
+    <label class="form-label" for="add-user-address">Address</label>
+    <input type="text" id="add-user-address" class="form-control" placeholder="Jalan Harapan Baru" aria-label="jdoe1" name="address" />
+    </div>
+    <div class="mb-3">
+    <label class="form-label" for="user-role">Position</label>
+    <input type="text" id="add-user-company" class="form-control" placeholder="Web Developer" aria-label="jdoe1" name="position" />
     </div>
     <button type="submit" class="btn btn-primary me-sm-3 me-1 data-submit">Submit</button>
     <button type="reset" class="btn btn-label-secondary" data-bs-dismiss="offcanvas">Cancel</button>
