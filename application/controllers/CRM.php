@@ -30,10 +30,10 @@ class CRM extends CI_Controller {
 
         $contact['contact_data'] = $this->CRM_model->get_contact('crm_contact'); //treasure pertama -> model, treasure kedua -> fungsi model, treasure ketiga -> tabel
 
-        $this->load->view('architecture/above');
-        $this->load->view('architecture/middle');
+        $this->load->view('architecture-2/above');
+        $this->load->view('architecture-2/middle');
         $this->load->view('sneat/contact-management', $contact);
-        $this->load->view('architecture/zone');
+        $this->load->view('architecture-2/zone');
     }
 
     public function register() {

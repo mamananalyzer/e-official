@@ -190,7 +190,6 @@
     <tbody>
       <?php foreach ($contact_data['data'] as $p):?>                                
       <tr class="odd">
-        <td class="control" tabindex="0" style="display: none;"></td>
         <td class="sorting_1">
           <div class="d-flex justify-content-start align-items-center user-name">
             <div class="avatar-wrapper">
